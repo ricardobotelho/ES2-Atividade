@@ -1,0 +1,200 @@
+.container {
+    display: grid;
+    grid-template-columns: 200px auto 200px;
+    grid-template-rows: auto auto auto;
+    margin: -8px;
+    background-color: white;
+}
+
+
+header {
+    text-align: center;
+    background-color: white;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+header h1 {
+    text-align: center;
+    font-family: Blackadder ITC;
+    font-size: 40px;
+    align-items: center;
+    margin: 5px;
+    padding: 0;
+}
+
+header h1 {
+    color: green;
+}
+
+header h1,img {
+    display: inline;
+    align-items: center;
+}
+
+header img {
+    float: center;
+    align-items: center;
+    margin: 0;
+    padding: 0;
+}
+
+footer {
+    background-color: burlywood;
+    grid-column-start: 1;
+    grid-column-end: 4;
+    margin-bottom: 2px;
+    padding: 10px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+footer p {
+    color: black;
+    font-size: 17px;
+    text-align: center;
+}
+
+nav {
+    background-color: olive;
+    /* pode-se alterar a coluna e linha em que um elemento é renderizado */
+    grid-column: 1;
+    grid-row: 2;
+    list-style: none;
+    padding: 8px;
+    box-shadow: 0 2px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+nav ul li {
+    display: inline-block
+}
+
+nav ul li a {
+    font-size: 20px;
+    list-style: none;
+    color: cornsilk;
+    text-decoration: none;
+    border-bottom: 5px solid olive;
+}
+
+nav ul li a:hover {
+    color: black;
+}
+
+article {
+    background-color: antiquewhite;
+    grid-row-start: 2;
+    grid-row-end: 4;
+    grid-column-start: 2;
+    grid-column-end: 4;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+article img,iframe {
+    display: inline;
+    align-items: center;
+}
+
+article hr, table {
+    margin: 1px;
+}
+
+article img#Pousada2 {
+    display: none;
+}
+
+/* media queries */
+/* para telas menores (com resolução de no máximo) 900px */
+@media screen and (max-width: 900px) {
+    body {
+        background-color: antiquewhite;
+    }
+
+    article img#Pousada {
+        display: inline;
+    }
+
+    article img#Pousada2 {
+        display: none;
+    }
+
+    article iframe {
+        display: inline;
+    }
+}
+
+@media screen and (max-width: 480px) {
+    body {
+        background-color: antiquewhite;
+    }
+
+    article img#Pousada2 {
+        display: inline;
+        width: 250px;
+        height: 170px;
+        border-radius: 70px;
+    }
+
+    article img#Pousada {
+        display: none;
+    }
+
+    article iframe {
+        display: none;
+    }
+}
+
+aside {
+    background-color: green;
+    grid-column: 1;
+    grid-row: 3;
+    padding: 8px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.12), 0 1px 2px rgba(0,0,0,0.24);
+}
+
+aside h4 {
+    color: cornsilk
+}
+
+table {
+    background-color: goldenrod;
+    color: white;
+    text-align: left;
+    border-collapse: collapse;
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+th, td {
+    padding: 10px;
+}
+
+thead tr {
+    border-bottom: 3px solid cornsilk;
+    background-color: darkgoldenrod;
+    color: black;
+}
+
+tbody tr {
+    background-color: black;
+    color: white
+}
+
+tbody tr:hover {
+    background-color: cornsilk;
+    color: black;
+}
+
+tfoot {
+    background-color: crimson;
+    color: white;
+    font-weight: bold;
+    font-style: italic;
+}
+
+form {
+    font-size: 20px;
+    text-align: left;
+}
