@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!--Metatag Keywords indica as palavras chave do site (SEO)-->
+    <meta name="keywords" content="pousada, hotel, pelotas, churrascaria, jantar, galeteria, almoco">
+    <!--Metatag Description serve como complemento e é exibido após os links no Google-->
+    <meta name="description" content="Descanse em boa companhia">
+    <link rel="stylesheet" href="estilos.css">
+    <title>Recanto da Natureza - Pousada</title>
+    <style>
+        article fieldset {background-color: beige;}
+        article h2 {color: olive; text-align: center;}
+    </style>
+</head>
+<body>
+    <div class="container">
+        <header>
+            <img src="natureza.jpeg" alt="Pousada" width="90" height="80" id="logo">
+            <h1>Recanto da Natureza</h1>
+        </header> 
+        <nav>
+            <h2>MENU</h2>
+            <ul>
+                <li><a href="index.html">INICIO</a></li>
+                <li><a href="hospedagem.html">HOSPEDAGEM</a></li>
+            </ul>
+        </nav>
+        <article>
+            <h2>RESERVAS</h2>
+          <fieldset>
+            <form>
+                <p>
+                    <label for="check-in">Check-In:</label>
+                    <input type="date" ide="check-in" required>
+                </p>
+                <p>
+                    <label for="check-out">Check-Out:</label>
+                    <input type="date" ide="check-out" required>
+                </p>
+                <p>
+                    <label for="quartos">Tipo de Quarto:</label>
+                    <select id="Características">
+                        <option value="super">Superluxo</option>
+                        <option value="duplo">Duplo Superluxo</option>
+                        <option value="triplo">Triplo Superluxo</option>
+                    </select>
+                </p>
+                <p>
+                    <label for="adultos">Adultos:</label>
+                    <input type="number" ide="adultos" required>
+                </p>
+                <p>
+                    <label for="criancas">Crianças:</label>
+                    <input type="number" ide="criancas" required>
+                </p>
+                <p>
+                    <label for="nome">Nome Completo:</label>
+                    <input type="text" ide="nome" required>
+                </p>
+                <p>
+                    <label for="telefone">Telefone:</label>
+                    <input type="tel" ide="telefone" pattern="\([0-9]{2}\)[9]{1}[0-9]{4}-[0-9]{4}" placeholder="(xx) 9xxxx-xxxx" required>
+                    <!-- tel (pattern e placeholder)
+                        number (step,max,min)
+                        search
+                    -->
+                </p>
+                <input type="submit" value="RESERVAR">
+                <input type="reset" value="LIMPAR">
+            </form>
+          </fieldset>
+        </article>
+        <aside>
+            <h3>SERVIÇOS</h3>
+            <h4>CAFÉ DA MANHÃ</h4>
+            <h4>PISCINA</h4>
+            <h4>RESTAURANTE</h4>
+            <h4>GARAGEM</h4>
+            <h4>PASSEIO A CAVALO</h4> 
+        </aside>
+        <footer>
+           <p><strong>CONTATOS: (53) 9 9141 - 7048  /  reservas@recantonatureza.com.br</strong></p>
+        </footer>
+    </div>
+ </body>
+</html>
