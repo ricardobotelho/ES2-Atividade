@@ -21,7 +21,7 @@ Repositório que possui uma atividade realizada da disciplina de Programação p
 
 - Atividade tinha como objetivo, criar um site de hospedagem (hotel ou pousada).
 
-- Linhagem de programação utilizada foi o HTML5 e a linguagem de formatação utilizada foi o CSS.
+- Linguagem de programação utilizada foi o HTML5 e a linguagem de formatação utilizada foi o CSS.
 
 ## ⚡ Como executar
 
